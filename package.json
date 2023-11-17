@@ -1,0 +1,27 @@
+{
+  "name": "playwright-sauce-demo-ts",
+  "version": "1.0.0",
+  "description": "Este projeto tem o objetivo de demonstrar conceitos e formas de utilizar o framework Playwright para a criação de testes e2e e de API",
+  "main": "index.js",
+  "scripts": {
+    "py-test:dev": "ENV=development playwright test",
+    "py-ui:dev": "ENV=development playwright test --ui",
+    "py-chrome:dev": "ENV=development playwright test --project=chromium",
+    "py-sauce-demo:dev": "ENV=development playwright test tests/sauceDemo/",
+    "py-sauce-demo-chrome:dev": "ENV=development playwright test tests/sauceDemo/  --project=chromium",
+    "py-backend:dev": "ENV=development playwright test tests/backend/ --project=chromium",
+    "py-debug:dev": "ENV=development playwright test tests/sauceDemo/ --debug",
+    "py-report:dev": "ENV=development playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.0",
+    "@types/node": "^20.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "jsonschema": "^1.4.1"
+  }
+}
